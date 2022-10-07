@@ -2,8 +2,7 @@
 
 # open tabs for developmenting the app
 gnome-terminal --tab --title="Docker" -- bash -c "cd Documents/majestic_monolith; docker-compose up; $SHELL" &
-gnome-terminal --tab --title="Yarn CSS" -- bash -c "sleep 5; cd Documents/majestic_monolith; docker-compose exec majestic_monolith yarn build:css --watch; $SHELL" &
-gnome-terminal --tab --title="Yarn JS" -- bash -c "sleep 5; cd Documents/majestic_monolith; docker-compose exec majestic_monolith yarn build --watch; $SHELL" &
+gnome-terminal --tab --title="Procfile.dev" -- bash -c "sleep 5; cd Documents/majestic_monolith; docker-compose exec majestic_monolith ./bin/dev; $SHELL" &
 
 # lets go directory to the app
 cd Documents/majestic_monolith
